@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/scss/enter-style.css">
+</head>
+<body>
+  <div class="container">
+    `
+  <div id="login-popup" class="popup popup_login">
+   <div class="popup__content">
+    <div class="popup__content-title">
+        <a class="main-menu-box__link" href="index.html"><img class="main-menu-box__logo" src="./src/img/logo-reg.svg" alt="logo"></a>
+     <h2 class="popup__title">Войти в аккаунт</h2>
+    </div>
+
+    <form
+     method="post"
+     action="/enter.php"
+     class="form form_login"
+    >
+     <div class="form-login__input">
+      <label class="form__label" for="loginEmail">Почта:</label>
+      <input
+       class="form__input"
+       type="text"
+       id="loginEmail"
+       name="loginEmail"
+      />
+     </div>
+     <div class="form-login__input">
+      <label class="form__label" for="loginPassword">Пароль:</label>
+      <input
+       class="form__input"
+       type="password"
+       id="loginPassword"
+       name="loginPassword"
+      />
+     </div>
+  
+     <button class="form__submit" type="submit" id="login-submit">
+      Войти
+     </button>
+     <div class="form__login-aside">
+      <div class="form__login-aside-text">
+      </div>
+      <a href="register.html" class="form__link" id="register-btn">
+       Создать аккаунт
+      </a>
+     </div>
+    </form>
+   </div>
+  </div>
+
+    </div>
+   </div>
+  </div> 
+  <script type="module" src="/main.js"> </script>
+<script  src="/src/js/main.js"> </script>
+<script  src="./src/js/popap.js"> </script> 
+</body>
+</html>

@@ -1,0 +1,22 @@
+@mixin text{
+    font-family: var(--font-family);
+font-weight: 400;
+font-size: 20px;
+color: #000;
+}
+@mixin text_bold{
+    font-family: var(--font-family);
+font-weight: 700;
+font-size: 32px;
+color: #000;
+}
+@mixin btn{
+    font-family: var(--font-family);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 20px;
+    color: #EEE2D2;
+    border-radius: 50px;
+    padding: 13px 23px;
+    background: #AF7A7D;
+}

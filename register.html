@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/scss/reg-style.css">
+</head>
+<body>
+  <div class="container">
+
+  <div id="register-popup" class="popup popup_register">
+   <div class="popup__content popup__content-reg">
+    <div class="popup__content-title">
+      <a class="main-menu-box__link" href="index.html"><img class="main-menu-box__logo" src="./src/img/logo-reg.svg" alt="logo"></a>
+     <h2 class="popup__title">Регистрация</h2>
+    </div>
+
+    <form
+     method="post"
+     action="/reg.php"
+     class="form form_register"
+    >
+     <div class="aas">
+      <div class="form-register__input">
+       <label class="form__label" for="register-name">Имя:</label>
+       <input
+        class="form__input"
+        type="text"
+        id="register-name"
+        name="name"
+       />
+      </div>
+      <div class="form-register__input">
+       <label class="form__label" for="register-surname">Фамилия:</label>
+       <input
+        class="form__input"
+        type="text"
+        id="register-surname"
+        name="surname"
+       />
+      </div>
+
+      <div class="form-register__input">
+        <label class="form__label" for="register-email">Email:</label>
+        <input
+         class="form__input"
+         type="email"
+         id="register-email"
+         name="email"
+        />
+       </div>
+       <div class="form-register__input">
+        <label class="form__label" for="register-phone">Телефон:</label>
+        <input
+         class="form__input-reg-phone form__input"
+         type="tel"
+         id="register-phone"
+         name="phone"
+        />
+       </div>
+
+       <div class="form-register__input">
+        <label class="form__label" for="register-bDate"
+         >Дата рождения:</label
+        >
+        <input
+         class="form__input"
+         type="date"
+         id="register-bDate"
+         name="date"
+        />
+       </div>
+
+       <div class="form-register__input">
+        <label class="form__label" for="register-password">Пароль:</label>
+        <input
+         class="form__input"
+         type="password"
+         id="register-password"
+         name="pass"
+        />
+       </div>
+       <div class="form-register__input">
+        <label class="form__label" for="register-password-confirm"
+         >Подтвердите пароль:</label
+        >
+        <input
+         class="form__input"
+         type="password"
+         id="register-password-confirm"
+         name="passwordConfirm"
+        />
+       </div>
+       <button class="form__submit" id="register-submit">
+        Зарегистрироваться
+       </button>
+       
+       <div class="form__login-aside">
+        <div class="form__login-aside-text">
+        </div>
+        <a href="enter.html" class="form__link" id="register-btn">
+          Войти
+         </a>
+       </div>
+      </div>
+     </form>
+    </div>
+   </div>
+  </div>  
+</body>
+</html>
